@@ -8,17 +8,12 @@ do {
     movimientoJugador = prompt(
       'Juego Piedra-Papel-Tijera\nElegir un movimiento (1-Piedra; 2-Papel; 3-Tijera):'
     );
-    console.log(movimientoJugador);
   } while (isNaN(movimientoJugador) || movimientoJugador == '');
   const movJugadorConvertidoaEntero = parseInt(movimientoJugador);
   const movimientoComputadora = Math.floor(Math.random() * 3 + 1);
   // movimientoComputadora = 1 entonces es piedra.
   // movimientoComputadora = 2 entonces es papel.
   //movimientoComputadora = 3 entonces es tijera.
-
-  console.log(movimientoComputadora);
-  console.log('convertido a int', movimientoJugador);
-
   switch (movJugadorConvertidoaEntero) {
     //Jugador eligio piedra
     case 1:
