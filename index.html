@@ -7,13 +7,76 @@
     <meta name="description" content="Juego Piedra-Papel-Tijera" />
     <meta name="keybords" content="Juego, piedra, papel, tijera" />
     <meta name="author" content="Romero Uro Juan Gerardo" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Piedra, Papel y Tijera</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <div class="bg-body-tertiar container">
+        <h1 class="text-center">Juego Piedra, Papel o Tijera</h1>
+      </div>
     </header>
+    <main>
+      <section>
+        <h2 id="jugarNuevamente" class="text-center text-danger">
+          Tiempo 00:00
+        </h2>
+      </section>
+      <div class="container text-center">
+        <div class="row m-2">
+          <section class="col col-sm-6 border border-1 border-danger p-1">
+            <h3 class="border border-danger">Jugador:</h3>
+            <div
+              id="contenedorImagenesJugador"
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                onclick="eleccionJugador(1)"
+                width="100"
+                src="assets/img/piedra-removebg.png"
+                alt="img piedra"
+              />
+              <img
+                onclick="eleccionJugador(2)"
+                width="100"
+                src="assets/img/papel-removebg.png"
+                alt="img papel"
+              />
+              <img
+                onclick="eleccionJugador(3)"
+                width="100"
+                src="assets/img/tijera-removebg.png"
+                alt="img tijera"
+              />
+            </div>
+          </section>
+          <section class="col col-sm-6 border border-1 border-danger p-1">
+            <h3 class="border border-danger">Computadora:</h3>
+            <img
+              id="imagenComputadora"
+              class="pt-1"
+              width="60"
+              src="assets/img/signoPregunta.png"
+              alt="imagen signo pregunta"
+            />
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark text-center text-light py-3">
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/app.js"></script>
   </body>
 </html>
