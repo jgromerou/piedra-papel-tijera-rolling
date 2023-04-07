@@ -2,7 +2,7 @@
 
 ## Descripción
 
-crear un script con toda la logica necesaria que solicite al usuario un movimiento (piedra - papel - tijera) la PC elija aleatoriamente un movimiento y al final mostrar por pantalla quien gano, luego preguntar si queremos jugar otra vez.
+Usar el DOM y crear un script con toda la logica necesaria que solicite al usuario un movimiento (piedra - papel - tijera) la PC elija aleatoriamente un movimiento y al final mostrar por pantalla quien gano, luego preguntar si queremos jugar otra vez.
 
 ## Tecnologias / Herramientas 🛠
 
@@ -17,10 +17,12 @@ En una terminal usar el siguiente comando
 git clone https://github.com/jgromerou/piedra-papel-tijera-rolling.git
 ```
 
-y luego en el archivo index.html cambiar en el script
+y luego hacer click en el archivo index.html.
 
-el número de ejercicio correspondiente.
+## Link para probar el Juego:
 
-## Autores
+[Netlify](https://piedra-papel-tijerarollingcode-romero.netlify.app/)
+
+## Autor
 
 1. Juan Gerardo Romero Uro [github](https://github.com/jgromerou)
