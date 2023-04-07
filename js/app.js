@@ -33,6 +33,10 @@ function eleccionJugador(opcion) {
 
   //Activar el boton "Volver a Jugar"
   botonJugardenuevo.classList.remove('disabled');
+
+  //cambiar el subtitulo
+  const subtitulo = document.getElementById('subtitulo');
+  subtitulo.innerHTML = 'Resultado del Juego:';
 }
 
 asignarSrcImagenJugador = (opcion) => {
@@ -150,5 +154,9 @@ function mostrarDivEleccionJugador() {
     //asignar la imagen de signo de pregunta
     const imagenComputadora = document.getElementById('imagenComputadora');
     imagenComputadora.src = '/assets/img/signoPregunta.png';
+
+    //cambiar el subtitulo
+    const subtitulo = document.getElementById('subtitulo');
+    subtitulo.innerHTML = 'Elige uno de los tres movimientos';
   }
 }
