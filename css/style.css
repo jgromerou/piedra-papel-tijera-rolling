@@ -1,0 +1,13 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+main {
+  flex-grow: 1;
+}
+.text-center {
+  text-align: center;
+}
