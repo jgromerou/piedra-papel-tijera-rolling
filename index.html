@@ -22,16 +22,11 @@
         <h1 class="text-center">Juego Piedra, Papel o Tijera</h1>
       </div>
     </header>
-    <main>
-      <section>
-        <h2 id="jugarNuevamente" class="text-center text-danger">
-          Tiempo 00:00
-        </h2>
-      </section>
-      <div class="container text-center">
+    <main id="padre">
+      <section class="container text-center">
         <div class="row m-2">
-          <section class="col col-sm-6 border border-1 border-danger p-1">
-            <h3 class="border border-danger">Jugador:</h3>
+          <article id="seccionPadreJugador" class="col col-sm-6 card p-1">
+            <div class="card-header">Jugador:</div>
             <div
               id="contenedorImagenesJugador"
               class="d-flex flex-column justify-content-center align-items-center"
@@ -55,19 +50,27 @@
                 alt="img tijera"
               />
             </div>
-          </section>
-          <section class="col col-sm-6 border border-1 border-danger p-1">
-            <h3 class="border border-danger">Computadora:</h3>
-            <img
-              id="imagenComputadora"
-              class="pt-1"
-              width="60"
-              src="assets/img/signoPregunta.png"
-              alt="imagen signo pregunta"
-            />
-          </section>
+          </article>
+          <article class="col col-sm-6 card p-1">
+            <div class="card-header">Computadora:</div>
+            <div class="align-items-center">
+              <img
+                id="imagenComputadora"
+                class="pt-1"
+                width="100"
+                src="assets/img/signoPregunta.png"
+                alt="imagen signo pregunta"
+              />
+            </div>
+          </article>
         </div>
-      </div>
+      </section>
+
+      <section class="m-2 p-2 text-center">
+        <button id="jugarNuevamente" class="btn btn-success disabled">
+          Volver a Jugar
+        </button>
+      </section>
     </main>
     <footer class="bg-dark text-center text-light py-3">
       <p>&copy; Todos los derechos reservados</p>
