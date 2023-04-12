@@ -56,7 +56,7 @@ asignarSrcImagenJugador = (opcion) => {
       );
       break;
     default:
-      console.log('La opción ingresada no es válida');
+      alert('La opción ingresada no es válida');
   }
 };
 
@@ -75,19 +75,28 @@ function eleccionComputadorayComparar() {
       if (movimientoComputadora === 1) {
         //si la computadora eligio piedra
         asignarImagenComputadora.src = '/assets/img/piedra-removebg.png';
-        alert('¡Empate! - Ambos eligieron piedra.');
+        let modalBody = document.getElementById('modal-body');
+        modalBody.className = 'alert alert-warning';
+        modalBody.setAttribute('role', 'alert');
+        modalBody.innerHTML = '¡Empate! - Ambos eligieron piedra.';
       } else {
         if (movimientoComputadora === 2) {
           //si la computada eligio papel
           asignarImagenComputadora.src = '/assets/img/papel-removebg.png';
-          alert('¡Perdiste! - La computadora eligió el papel y vos la piedra.');
+          let modalBody = document.getElementById('modal-body');
+          modalBody.className = 'alert alert-danger';
+          modalBody.setAttribute('role', 'alert');
+          modalBody.innerHTML =
+            '¡Perdiste! - La computadora eligió papel y vos piedra.';
         } else {
           if (movimientoComputadora === 3) {
             //si la computadora eligio tijera.
             asignarImagenComputadora.src = '/assets/img/tijera-removebg.png';
-            alert(
-              '¡Ganaste! - La computadora eligió la tijera y vos la piedra.'
-            );
+            let modalBody = document.getElementById('modal-body');
+            modalBody.className = 'alert alert-info';
+            modalBody.setAttribute('role', 'alert');
+            modalBody.innerHTML =
+              '¡Ganaste! - La computadora eligió tijera y vos piedra.';
           }
         }
       }
@@ -97,19 +106,33 @@ function eleccionComputadorayComparar() {
       if (movimientoComputadora === 1) {
         //si la computadora eligio piedra
         asignarImagenComputadora.src = '/assets/img/piedra-removebg.png';
-        alert('¡Ganaste! - La computadora eligió piedra y vos el papel.');
+        //alert('¡Ganaste! - La computadora eligió piedra y vos el papel.');
+        let modalBody = document.getElementById('modal-body');
+        modalBody.className = 'alert alert-info';
+        modalBody.setAttribute('role', 'alert');
+        modalBody.innerHTML =
+          '¡Ganaste! - La computadora eligió piedra y vos papel.';
       } else {
         if (movimientoComputadora === 2) {
           //si la computada eligio papel
           asignarImagenComputadora.src = '/assets/img/papel-removebg.png';
-          alert('¡Empate! - Ambos eligieron papel.');
+          //alert('¡Empate! - Ambos eligieron papel.');
+          let modalBody = document.getElementById('modal-body');
+          modalBody.className = 'alert alert-warning';
+          modalBody.setAttribute('role', 'alert');
+          modalBody.innerHTML = '¡Empate! - Ambos eligieron papel.';
         } else {
           if (movimientoComputadora === 3) {
             //si la computadora eligio tijera.
             asignarImagenComputadora.src = '/assets/img/tijera-removebg.png';
-            alert(
-              '¡Perdiste! - La computadora eligió el tijera y vos el papel.'
-            );
+            // alert(
+            //   '¡Perdiste! - La computadora eligió el tijera y vos el papel.'
+            // );
+            let modalBody = document.getElementById('modal-body');
+            modalBody.className = 'alert alert-danger';
+            modalBody.setAttribute('role', 'alert');
+            modalBody.innerHTML =
+              '¡Perdiste! - La computadora eligió tijera y vos papel.';
           }
         }
       }
@@ -119,17 +142,31 @@ function eleccionComputadorayComparar() {
       if (movimientoComputadora === 1) {
         //si la computadora eligio piedra
         asignarImagenComputadora.src = '/assets/img/piedra-removebg.png';
-        alert('¡Perdiste! - La computadora eligió la piedra y vos la tijera.');
+        //alert('¡Perdiste! - La computadora eligió la piedra y vos la tijera.');
+        let modalBody = document.getElementById('modal-body');
+        modalBody.className = 'alert alert-danger';
+        modalBody.setAttribute('role', 'alert');
+        modalBody.innerHTML =
+          '¡Perdiste! - La computadora eligió piedra y vos tijera.';
       } else {
         if (movimientoComputadora === 2) {
           //si la computada eligio papel
           asignarImagenComputadora.src = '/assets/img/papel-removebg.png';
-          alert('¡Ganaste! - La computadora eligió el papel y vos la tijera.');
+          //alert('¡Ganaste! - La computadora eligió el papel y vos la tijera.');
+          let modalBody = document.getElementById('modal-body');
+          modalBody.className = 'alert alert-info';
+          modalBody.setAttribute('role', 'alert');
+          modalBody.innerHTML =
+            '¡Ganaste! - La computadora eligió papel y vos tijera.';
         } else {
           if (movimientoComputadora === 3) {
             //si la computadora eligio tijera.
             asignarImagenComputadora.src = '/assets/img/tijera-removebg.png';
-            alert('¡Empate! - Ambos eligieron tijera.');
+            //alert('¡Empate! - Ambos eligieron tijera.');
+            let modalBody = document.getElementById('modal-body');
+            modalBody.className = 'alert alert-warning';
+            modalBody.setAttribute('role', 'alert');
+            modalBody.innerHTML = '¡Empate! - Ambos eligieron tijeras.';
           }
         }
       }
@@ -140,7 +177,7 @@ function eleccionComputadorayComparar() {
       );
       break;
     default:
-      console.log('La opción ingresada no es válida');
+      alert('La opción ingresada no es válida');
   }
 }
 
